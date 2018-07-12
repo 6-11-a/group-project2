@@ -1,0 +1,16 @@
+.footer {
+    border-top: 2px solid #7a00cc;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+
+.footer a:hover {
+    color: #7a00cc;
+}

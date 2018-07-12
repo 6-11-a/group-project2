@@ -1,0 +1,62 @@
+#header {
+    display: flex;
+    flex-direction: row;
+    padding: 2.3em;
+    justify-content: space-between;
+    border-bottom: 2px solid #7a00cc;
+    z-index: 1;
+ }
+
+#header .logo h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#header .logo a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+
+#header .logo a:hover {
+    color: #7a00cc
+}
+
+#header .logo span {
+    color: #7a00cc;
+}
+
+#header .screen-links {
+    align-self: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#header .screen-links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: all .5s ease-in-out;
+}
+
+#header .screen-links a:hover {
+    color: #7a00cc;
+}
+
+@media screen and (max-width : 600px) {
+    #header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #header .logo {
+        align-self: center;
+        margin: 0 auto;
+    }
+}
+
+
+

@@ -1,0 +1,72 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 32px auto;
+}
+
+.login-container h1 {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container form input {
+    border-top: transparent !important;
+    border-left: transparent !important;
+    border-right: transparent !important;
+    border-bottom: 2px solid black !important;
+    font-size: 16px;
+    margin-bottom: 24px;
+    outline: none;
+}
+
+.login-container form input:focus {
+    color: #7a00cc;
+}
+
+.login-container input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgb(156, 156, 156);
+}
+.login-container form input::-moz-placeholder { /* Firefox 19+ */
+    color: rgb(156, 156, 156);
+}
+.login-container form input:-ms-input-placeholder { /* IE 10+ */
+    color: rgb(156, 156, 156);
+}
+.login-container form input:-moz-placeholder { /* Firefox 18- */
+    color: rgb(156, 156, 156);
+}
+
+.login-container form button {
+    color: #7a00cc;
+    background: transparent;
+    border: 2px solid #7a00cc;
+    border-radius: 4px;
+    box-shadow: 2px 3px #5e019c;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 21px auto;
+    padding: 10px;
+    width: 200px;
+    text-transform: uppercase;
+    transition: all .2s;
+}
+
+.login-container form button:active {
+    color: white;
+    background: #7a00cc;
+    transform: translatex(2px);
+    transform: translateY(3px);
+    box-shadow: 0 0 #4b017c;
+}
+
+.login-container form button:hover {
+    cursor: pointer;
+}
