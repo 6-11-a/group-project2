@@ -13,15 +13,16 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cookieParser())
 
 // PRODUCTION ONLY
-// app.use(express.static(path.join(__dirname, 'client/build')));
+app.use(express.static(path.join(__dirname, 'client/build')));
+
 let products = require('./app/routes/products');
 app.use('/products', products);
 
 
 // PRODUCTION ONLY
-// app.get('*', (req, res) => {
-//     res.sendFile(path.join(__dirname + '/client/build/index.html'));
-// });
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname + '/client/build/index.html'));
+});
 
 // Development mode port
 const port = process.env.PORT || 5000;

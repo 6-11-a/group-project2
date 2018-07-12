@@ -13,7 +13,7 @@ export default class Header extends Component {
                     <h1><a href="/"><span>E</span>comm</a></h1>
                 </div>
                 <div className="screen-links">
-                    <a href="/cart"> <Icon size={30} className="cart-icon" icon={shoppingCart} /></a>
+                    <a href="/cart"> <Icon size={30} icon={shoppingCart} /></a>
                     <a href="/login">Login/Sign up</a>
                 </div>
             </div> 
