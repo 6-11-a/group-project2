@@ -1,7 +1,12 @@
 .footer {
     border-top: 2px solid #7a00cc;
+    bottom: 0;
+    left: 0;
     padding: 20px;
+    position: absolute;
+    right: 0;
     text-align: center;
+    width: 100%;
 }
 
 .footer a {

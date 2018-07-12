@@ -11,13 +11,12 @@ import './App.css';
 
 class App extends Component {
   state = {
-	  products: {},
-	  order: {}
+	  products: {}
   };
   render() {
     return (
       <Router>
-        <div>
+        <div className="app">
           <Route exact path="/" component={Home} />
           <Route path="/cart" component={Cart} />
           <Route path="/login" component={LoginSignUp} />

@@ -87,3 +87,7 @@ a {
 .checkout-btn:hover {
     cursor: pointer;
 }
+
+.checkout-btn:focus {
+    outline: none;
+}
