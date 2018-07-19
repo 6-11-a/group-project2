@@ -7,6 +7,8 @@ const bodyParser   = require('body-parser');
 const db           = require('./config/db');
 const app          = express();
 
+console.log('hello world')
+
 // app middleware
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
