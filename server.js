@@ -15,8 +15,14 @@ app.use(cookieParser())
 // PRODUCTION ONLY
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-let products = require('./app/routes/products');
+require('./models/product');
+require('./models/user');
+
+let products = require('./routes/products');
 app.use('/products', products);
+
+let users = require('./routes/users');
+app.use('/users', users);
 
 
 // PRODUCTION ONLY

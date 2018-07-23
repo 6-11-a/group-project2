@@ -10,11 +10,11 @@ export default class ShopCart extends Component {
         if(currentCart) {
             let total = 0;
             for(let i = 0; i < currentCart.items.length; i++) {
-                total += (currentCart.items[i].price * currentCart.items[i].qty)
+                total += (currentCart.items[i].price * currentCart.items[i].qty);
                 if((currentCart.items.length - 1) === i) {
                     this.setState({
                         cartItems: currentCart.items,
-                        grandTotal: total
+                        grandTotal: total.toFixed(2)
                     })
                 } else {
                     continue;
@@ -57,7 +57,7 @@ export default class ShopCart extends Component {
                         <div className="cart-item-info">
                             <h3 className="cart-item-name">{cartItem.name}</h3>
                             <div className="cart-item-value">
-                                <span className="cart-item-price">${(cartItem.total * cartItem.qty)}</span>
+                                <span className="cart-item-price">${(cartItem.total * cartItem.qty).toFixed(2)}</span>
                                 <span className="cart-item-qty">Qty:
                                     <select ref="qtySelect" onChange={(e) => this.updateQty(e, cartItem.name)} className="cart-item-qty-select">
                                         <option value={cartItem.qty}>{cartItem.qty}</option>
